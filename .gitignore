@@ -1,14 +1,18 @@
+.idea
+
 # Composer files
 composer.phar
 vendor/
+public/assets/
 
 # Local configs
 config/autoload/*.local.php
 
 # Binary gettext files
-*.mo
+#*.mo
 
 # Data
+data/config-cache.php
 data/logs/
 data/cache/
 data/sessions/
@@ -18,6 +22,10 @@ temp/
 #Doctrine 2
 data/DoctrineORMModule/Proxy/
 data/DoctrineORMModule/cache/
+
+#ZfcDatagrid
+data/ZfcDatagrid/
+data/ZfcDatagrid/
 
 # Legacy ZF1
 demos/
