@@ -27,23 +27,27 @@ return [
     'Zend\Session',
     'Zend\Router',
     'Zend\Validator',
+
     'DoctrineModule',
     'DoctrineORMModule',
+    'ZfcDatagrid',
+    'AsseticBundle',
 
     'Popov\ZfcCurrent',
     'Popov\ZfcCore',
-    'Popov\ZfcRole',
-    'Popov\ZfcMail',
+    'Popov\ZfcEntity',
     'Popov\ZfcForm',
     'Popov\ZfcFields',
-    'Popov\ZfcEntity',
     'Popov\ZfcDataGridPlugin',
     'Popov\ZfcDataGrid',
-    'Popov\ZfcStatus',
     'Popov\ZfcPermission',
     'Popov\ZfcUser',
+    'Popov\ZfcRole',
+    'Popov\ZfcMail',
+    'Popov\ZfcStatus',
     'Popov\ZfcTab',
 
+    'Stagem\ZfcAction',
     'Stagem\ZfcAdmin',
     'Stagem\ZfcLayout',
     'Stagem\ZfcLang',
@@ -51,5 +55,5 @@ return [
     'Stagem\ZfcSystem\Config',
     'Stagem\ZfcListener',
     'Stagem\ZfcPool',
-    'Stagem\ZfcAction',
+
 ];
