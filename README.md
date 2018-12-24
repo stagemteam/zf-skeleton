@@ -1,10 +1,10 @@
-# ZendSkeletonApplication
+# Stagem Skeleton Application
 
 ## Introduction
 
 This is a skeleton application using the Zend Framework MVC layer and module
 systems. This application is meant to be used as a starting place for those
-looking to get their feet wet with Zend Framework.
+looking to get their feet wet with Zend Framework and StageM ecosystem.
 
 ## Installation using Composer
 
@@ -15,7 +15,13 @@ then please install as per the [documentation](https://getcomposer.org/doc/00-in
 To create your new Zend Framework project:
 
 ```bash
-$ composer create-project -sdev zendframework/skeleton-application path/to/install
+$ composer create-project -sdev stagem/stagem-skeleton path/to/install
+$ composer update
+```
+
+## Post installation process
+```bash
+$ mkdir -p public/assets
 ```
 
 Once installed, you can test it out immediately using PHP's built-in web server:
@@ -55,6 +61,9 @@ After making changes to one of the above-mentioned `.dist` configuration files y
 either need to disable then enable development mode for the changes to take effect,
 or manually make matching updates to the `.dist`-less copies of those files.
 
+## Admin Configuration
+
+
 ## Running Unit Tests
 
 To run the supplied skeleton unit tests, you need to do one of the following:
@@ -77,60 +86,6 @@ If you need to make local modifications for the PHPUnit test setup, copy
 precedence over the former when running tests, and is ignored by version
 control. (If you want to make the modifications permanent, edit the
 `phpunit.xml.dist` file.)
-
-## Using Vagrant
-
-This skeleton includes a `Vagrantfile` based on ubuntu 16.04 (bento box)
-with configured Apache2 and PHP 7.0. Start it up using:
-
-```bash
-$ vagrant up
-```
-
-Once built, you can also run composer within the box. For example, the following
-will install dependencies:
-
-```bash
-$ vagrant ssh -c 'composer install'
-```
-
-While this will update them:
-
-```bash
-$ vagrant ssh -c 'composer update'
-```
-
-While running, Vagrant maps your host port 8080 to port 80 on the virtual
-machine; you can visit the site at http://localhost:8080/
-
-> ### Vagrant and VirtualBox
->
-> The vagrant image is based on ubuntu/xenial64. If you are using VirtualBox as
-> a provider, you will need:
->
-> - Vagrant 1.8.5 or later
-> - VirtualBox 5.0.26 or later
-
-For vagrant documentation, please refer to [vagrantup.com](https://www.vagrantup.com/)
-
-## Using docker-compose
-
-This skeleton provides a `docker-compose.yml` for use with
-[docker-compose](https://docs.docker.com/compose/); it
-uses the `Dockerfile` provided as its base. Build and start the image using:
-
-```bash
-$ docker-compose up -d --build
-```
-
-At this point, you can visit http://localhost:8080 to see the site running.
-
-You can also run composer from the image. The container environment is named
-"zf", so you will pass that value to `docker-compose run`:
-
-```bash
-$ docker-compose run zf composer install
-```
 
 ## Web server setup
 

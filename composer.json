@@ -35,16 +35,18 @@
     "doctrine/migrations": "@stable",
     "doctrine/annotations": "@stable",
     "gedmo/doctrine-extensions": "^2.4",
-    "widmogrod/zf2-assetic-module": "~1.6",
-    "zfc-datagrid/zfc-datagrid": "dev-master",
+    "widmogrod/zf2-assetic-module": "dev-router-merge",
+    "zfc-datagrid/zfc-datagrid": "dev-expressive",
     "phpoffice/phpexcel": "~1.7",
     "twbs/bootstrap": "^3.3",
     "twbs/bootstrap-sass": "^3.3",
     "components/bootstrap-datetimepicker": "dev-master",
     "components/jquery": "~2.2",
     "components/jqueryui": "~1.12",
-    "leafo/scssphp": "0.6.5",
+    "leafo/scssphp": "^0.7",
     "ppito/zf3-whoops": "^1.3",
+    "popov/db": "dev-master",
+    "popov/zfc-db": "dev-master",
     "popov/zfc-core": "dev-master",
     "popov/zfc-current": "dev-master",
     "popov/zfc-simpler": "dev-master",
@@ -61,6 +63,7 @@
     "popov/zfc-permission": "dev-master",
     "popov/zfc-status": "dev-master",
     "popov/zfc-tab": "dev-master",
+    "stagem/zfc-cron": "dev-master",
     "stagem/zfc-action": "dev-master",
     "stagem/zfc-pool": "dev-master",
     "stagem/zfc-menu": "dev-master",
@@ -70,6 +73,24 @@
     "stagem/zfc-listener": "dev-master",
     "stagem/zfc-system-config": "dev-master"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/popovserhii/zf2-assetic-module"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/popovserhii/zfc-datagrid"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/popovserhii/zf2-cron"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/stagemteam/zfc-cron"
+    }
+  ],
   "autoload": {
     "psr-4": {
     }

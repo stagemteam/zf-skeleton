@@ -7,13 +7,16 @@ public/assets/
 
 # Local configs
 config/autoload/*.local.php
+config/parameters.local.php
 
 # Binary gettext files
 #*.mo
 
 # Data
 data/config-cache.php
+data/files/
 data/logs/
+data/files/
 data/cache/
 data/sessions/
 data/tmp/
@@ -24,7 +27,6 @@ data/DoctrineORMModule/Proxy/
 data/DoctrineORMModule/cache/
 
 #ZfcDatagrid
-data/ZfcDatagrid/
 data/ZfcDatagrid/
 
 # Legacy ZF1

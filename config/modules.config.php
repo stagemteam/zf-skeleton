@@ -11,10 +11,10 @@
  * This should be an array of module namespaces used in the application.
  */
 return [
+    'Popov\ZfcDb',
+    'Stagem\ZfcCron',
     'WhoopsErrorHandler',
-
     'Zend\Db',
-    'Zend\Mvc\Console',
     'Zend\Form',
     'Zend\InputFilter',
     'Zend\Filter',
@@ -27,12 +27,10 @@ return [
     'Zend\Session',
     'Zend\Router',
     'Zend\Validator',
-
     'DoctrineModule',
     'DoctrineORMModule',
     'ZfcDatagrid',
     'AsseticBundle',
-
     'Popov\ZfcCurrent',
     'Popov\ZfcCore',
     'Popov\ZfcEntity',
@@ -46,7 +44,6 @@ return [
     'Popov\ZfcMail',
     'Popov\ZfcStatus',
     'Popov\ZfcTab',
-
     'Stagem\ZfcAction',
     'Stagem\ZfcAdmin',
     'Stagem\ZfcLayout',
@@ -55,5 +52,4 @@ return [
     'Stagem\ZfcSystem\Config',
     'Stagem\ZfcListener',
     'Stagem\ZfcPool',
-
 ];
