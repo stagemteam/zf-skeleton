@@ -15,7 +15,7 @@ then please install as per the [documentation](https://getcomposer.org/doc/00-in
 To create your new Zend Framework project:
 
 ```bash
-$ composer create-project -sdev stagem/stagem-skeleton path/to/install
+$ composer create-project -sdev stagem/zf-skeleton path/to/install
 $ composer update
 ```
 
