@@ -62,7 +62,7 @@ either need to disable then enable development mode for the changes to take effe
 or manually make matching updates to the `.dist`-less copies of those files.
 
 ## Admin Configuration
-...
+... ...
 
 ## Running Unit Tests
 
