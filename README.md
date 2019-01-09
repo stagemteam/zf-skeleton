@@ -20,6 +20,47 @@ $ composer update
 ```
 
 ## Post installation process
+
+1. Create database and create/edit `config/parameters.local.php` with next configuration
+```php
+return [
+    'db' => [
+        'database' => 'your_database_name',
+        'username' => 'your_user_name',
+        'password' => 'your_secret_password',
+        'hostname' => '127.0.0.1',
+        'port' => 3306,
+        'charset' => 'utf8mb4',
+        'collate' => 'utf8mb4_unicode_ci',
+    ],
+];
+```
+
+2. Prepare Migrations' diff and execute them
+```php
+$ mkdir -p data/DoctrineORMModule/Migrations
+$ php public/index.php migrations:diff
+$ php public/index.php migrations:migrate
+```
+ 
+3. Prepare project's Entities
+```php
+$ php public/index.php entity sync
+```
+
+4. Prepare admin user
+```php
+$ cp vendor/popov/zfc-user/data/Version20180404060817.php data/DoctrineORMModule/Migrations/
+$ php public/index.php migrations:execute --up 20180404060817
+```
+
+You can access to administrator area with `http://localhost/admin` 
+**login**: **admin@stagem.com.ua**
+**password**: **123456**
+
+> Notice. Don't forget change default login and password for security reason. 
+
+5. Create directory for assets (js, css, media)
 ```bash
 $ mkdir -p public/assets
 ```

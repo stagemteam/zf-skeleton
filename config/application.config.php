@@ -52,21 +52,6 @@ return [
         // 'check_dependencies' => true,
     ],
 
-    'service_listener_options' => [
-        // Grid Data Grid Service Manager
-        [
-            'service_manager' => 'DataGridPluginManager',
-            'config_key' => 'data_grid_plugins',
-            'interface' => \Popov\ZfcDataGridPlugin\Service\Plugin\DataGridPluginProviderInterface::class,
-            'method' => 'getDataGridPluginConfig',
-        ],
-    ],
-    'service_manager' => [
-        'factories' => [ // Important! You must use factory for compatibility with ZF3
-            'DataGridPluginManager' => \Popov\ZfcDataGridPlugin\Service\Plugin\DataGridPluginFactory::class,
-        ],
-    ],
-
     // Used to create an own service manager. May contain one or more child arrays.
     // 'service_listener_options' => [
     //     [
