@@ -36,34 +36,43 @@ return [
 ];
 ```
 
-2. Prepare Migrations' diff and execute them
+2. Create directory for assets (js, css, media)
+```bash
+$ mkdir -p public/assets
+```
+
+3. Prepare Migrations' diff and execute them
 ```php
 $ mkdir -p data/DoctrineORMModule/Migrations
 $ php public/index.php migrations:diff
 $ php public/index.php migrations:migrate
 ```
  
-3. Prepare project's Entities
+4. Prepare project's Entities
 ```php
 $ php public/index.php entity sync
 ```
 
-4. Prepare admin user
+5. Prepare admin user
 ```php
 $ cp vendor/popov/zfc-user/data/Version20180404060817.php data/DoctrineORMModule/Migrations/
 $ php public/index.php migrations:execute --up 20180404060817
 ```
 
+After execution, console shows next output, it's normal
+```bash
+...
+Migration 20180404060817 was executed but did not result in any SQL statements.
+...
+```
+
 You can access to administrator area with `http://localhost/admin` 
+
 **login**: **admin@stagem.com.ua**
 **password**: **123456**
 
 > Notice. Don't forget change default login and password for security reason. 
 
-5. Create directory for assets (js, css, media)
-```bash
-$ mkdir -p public/assets
-```
 
 Once installed, you can test it out immediately using PHP's built-in web server:
 
