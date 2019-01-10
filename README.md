@@ -68,8 +68,9 @@ Migration 20180404060817 was executed but did not result in any SQL statements.
 
 You can access to administrator area with `http://localhost/admin` 
 
->**login**: **admin@stagem.com.ua**
->**password**: **123456**
+**login**: **admin@stagem.com.ua**
+
+**password**: **123456**
 
 > Notice. Don't forget change default login and password for security reason. 
 
